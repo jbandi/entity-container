@@ -1,0 +1,9 @@
+<h3>Entity Container</h3>
+
+<div [ngSwitch]="screenId">
+
+  <app-person-view *ngSwitchCase="'personView'"></app-person-view>
+  <app-org-view *ngSwitchCase="'orgView'"></app-org-view>
+  <app-generic-view *ngSwitchDefault></app-generic-view>
+
+</div>
